@@ -1829,13 +1829,14 @@ input, select, textarea {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="tel"], /* Added phone number field */
 	select,
 	textarea {
 		-moz-appearance: none;
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		background-color: rgba(144, 144, 144, 0.25);
+		background-color: rgba(144, 144, 144, 0.25); /* Gray background */
 		border-radius: 3px;
 		border: none;
 		color: inherit;
@@ -1857,6 +1858,7 @@ input, select, textarea {
 		input[type="text"]:focus,
 		input[type="password"]:focus,
 		input[type="email"]:focus,
+		input[type="tel"]:focus, /* Ensure phone field has focus styles */
 		select:focus,
 		textarea:focus {
 			box-shadow: 0 0 0 2px #21b2a6;
@@ -1882,6 +1884,7 @@ input, select, textarea {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="tel"],
 	select {
 		height: 2.75em;
 	}
@@ -2859,6 +2862,7 @@ input, select, textarea {
 			.wrapper.style1 input[type="text"],
 			.wrapper.style1 input[type="password"],
 			.wrapper.style1 input[type="email"],
+			.wrapper.style1 input[type="tel"],
 			.wrapper.style1 select,
 			.wrapper.style1 textarea {
 				background-color: rgba(255, 255, 255, 0.075);
@@ -3022,6 +3026,7 @@ input, select, textarea {
 			.wrapper.style3 input[type="text"],
 			.wrapper.style3 input[type="password"],
 			.wrapper.style3 input[type="email"],
+			.wrapper.style3 input[type="tel"],
 			.wrapper.style3 select,
 			.wrapper.style3 textarea {
 				background-color: rgba(255, 255, 255, 0.075);
@@ -3185,6 +3190,7 @@ input, select, textarea {
 			.wrapper.style5 input[type="text"],
 			.wrapper.style5 input[type="password"],
 			.wrapper.style5 input[type="email"],
+			.wrapper.style5 input[type="tel"],
 			.wrapper.style5 select,
 			.wrapper.style5 textarea {
 				background-color: rgba(0, 0, 0, 0.0375);
