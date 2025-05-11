@@ -54,7 +54,8 @@
                 <section class="wrapper style5">
                     <div class="inner">
                         <section>
-                            <h4>Get in Touch</h4>                            <form name="contact" method="post" action="https://formspree.io/f/info@jfcontracting.biz" onsubmit="return validateContactForm()">
+                            <h4>Get in Touch</h4>
+                            <form name="contact" method="post" action="https://formspree.io/f/info@jfcontracting.biz" onsubmit="return validateContactForm()">
                                 <input type="hidden" name="_next" value="https://jfcontracting.biz/thank-you.html" />
                                 <input type="hidden" name="_subject" value="New Website Inquiry" />
                                 <div class="row gtr-uniform">
@@ -72,12 +73,13 @@
                                     </div>
                                     <div class="col-6 col-12-xsmall">
                                         <input type="tel" name="phone" id="phone" placeholder="Phone Number" />
-                                    </div>                                    <div class="col-12">
+                                    </div>
+                                    <div class="col-12">
                                         <label for="inquiry_type">Inquiry Type</label>
                                         <select name="inquiry_type" id="inquiry_type" required onchange="updateMessagePlaceholder()">
                                             <option value="">- Select Inquiry Type -</option>
-                                            <option value="info@jfcontracting.biz">General Information</option>
-                                            <option value="quote@jfcontracting.biz">Request a Quote</option>
+                                            <option value="General Information">General Information</option>
+                                            <option value="Quote Request">Request a Quote</option>
                                         </select>
                                     </div>
                                     <div class="col-12">
@@ -145,9 +147,9 @@
                 const inquiryType = document.getElementById("inquiry_type").value;
                 const messageField = document.getElementById("message");
 
-                if (inquiryType === "info@jfcontracting.biz") {
+                if (inquiryType === "General Information") {
                     messageField.placeholder = "Please provide details about your general inquiry.";
-                } else if (inquiryType === "quote@jfcontracting.biz") {
+                } else if (inquiryType === "Quote Request") {
                     messageField.placeholder = "Please provide details about the project you'd like a quote for.";
                 } else {
                     messageField.placeholder = "Enter your message";
